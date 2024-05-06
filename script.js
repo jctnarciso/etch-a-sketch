@@ -29,5 +29,11 @@ function getOpacity(element) {
 
 function incrementOpacity(element) {
   let currentOpacity = +getOpacity(element);
-  return currentOpacity + 0.1;
+  element.style.opacity = currentOpacity + 0.1;
 }
+
+let cells = document.querySelectorAll(".cell");
+
+cells.forEach(cell => cell.addEventListener("mouseover", function() {
+  incrementOpacity(cell);
+}));
