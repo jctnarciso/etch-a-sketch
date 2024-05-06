@@ -16,7 +16,7 @@ let grid = document.querySelector("div.grid");
 //   parseFloat(styles.paddingRight);
 // }
 
-for (let i = 0; i < 900; i++) {
+for (let i = 0; i < (600/15)**2; i++) {
   let cell = document.createElement("div");
   cell.classList.toggle("cell");
   grid.appendChild(cell);
