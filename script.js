@@ -1,21 +1,5 @@
 let grid = document.querySelector("div.grid");
 
-// function getContentWidth(element) {
-//   let styles = getComputedStyle(element);
-
-//   return element.clientWidth -
-//   parseFloat(styles.paddingLeft) -
-//   parseFloat(styles.paddingRight);
-// }
-
-// function getContentHeight(element) {
-//   let styles = getComputedStyle(element);
-
-//   return element.clientHeight -
-//   parseFloat(styles.paddingLeft) -
-//   parseFloat(styles.paddingRight);
-// }
-
 for (let i = 0; i < (600/15)**2; i++) {
   let cell = document.createElement("div");
   cell.classList.toggle("cell");
@@ -29,7 +13,7 @@ function getOpacity(element) {
 
 function incrementOpacity(element) {
   let currentOpacity = +getOpacity(element);
-  element.style.opacity = currentOpacity + 0.1;
+  element.style.opacity = currentOpacity + 0.2;
 }
 
 let cells = document.querySelectorAll(".cell");
